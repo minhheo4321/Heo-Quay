@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script language="javascript">
+            var str = prompt("nhap chuoi ");
+            var sstr1 = str.toLowerCase();
+            // ,".","/","-",";","?","!","`","]"   .split(".").join(",").split("/").join(",").split(";").join(",").split("?").join(",").split("]").join(",").split("`")
+            var sstr = sstr1.split(" ").join(",").split("-").join(",").split("/").join(",").split(";").join(",").split("?").join(",").split("]").join(",").split("`").join(",").split("=");
+            // document.writeln(sstr);
+            // document.writeln(typeof(sstr));
+            // document.writeln(sstr.length);
+            document.writeln(sstr.sort());
+        </script>
+    </body>
+</html>
